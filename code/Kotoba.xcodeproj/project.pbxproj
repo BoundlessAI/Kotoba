@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		691B8E1620DAB5A100B11216 /* Workarounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691B8E1520DAB5A100B11216 /* Workarounds.swift */; };
+		8429C9D121766DEC00C1DCFF /* Sesame+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429C9D021766DEC00C1DCFF /* Sesame+Utilities.swift */; };
+		8429C9D321766E5500C1DCFF /* Sesame.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8429C9D221766E5500C1DCFF /* Sesame.plist */; };
+		8429C9D721766E9900C1DCFF /* Sesame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8429C9D621766E9900C1DCFF /* Sesame.framework */; };
 		BE0CD1141D178D3700BB6E4A /* UIViewController+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CD1131D178D3700BB6E4A /* UIViewController+Dictionary.swift */; };
 		BE7599A11D04636E006FBB80 /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7599A01D04636E006FBB80 /* WordList.swift */; };
 		BE776E571D09D60700D4A315 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE776E561D09D60700D4A315 /* Preferences.swift */; };
@@ -40,6 +43,9 @@
 
 /* Begin PBXFileReference section */
 		691B8E1520DAB5A100B11216 /* Workarounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workarounds.swift; sourceTree = "<group>"; };
+		8429C9D021766DEC00C1DCFF /* Sesame+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sesame+Utilities.swift"; sourceTree = "<group>"; };
+		8429C9D221766E5500C1DCFF /* Sesame.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Sesame.plist; path = ../../../keys/Kotoba/Sesame.plist; sourceTree = "<group>"; };
+		8429C9D621766E9900C1DCFF /* Sesame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sesame.framework; path = Carthage/Build/iOS/Sesame.framework; sourceTree = "<group>"; };
 		BE0CD1131D178D3700BB6E4A /* UIViewController+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Dictionary.swift"; sourceTree = "<group>"; };
 		BE7599A01D04636E006FBB80 /* WordList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
 		BE776E561D09D60700D4A315 /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
@@ -64,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8429C9D721766E9900C1DCFF /* Sesame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8429C9D521766E9900C1DCFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8429C9D621766E9900C1DCFF /* Sesame.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BE918C411A22A5F5006043CF = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +106,7 @@
 				BEA413B81D1CABB600D177C2 /* KotobaTests */,
 				BEB2324D1D1DD3B800369560 /* KotobaUITests */,
 				BE918C4B1A22A5F5006043CF /* Products */,
+				8429C9D521766E9900C1DCFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				BE918C4F1A22A5F5006043CF /* AppDelegate.swift */,
+				8429C9D021766DEC00C1DCFF /* Sesame+Utilities.swift */,
+				8429C9D221766E5500C1DCFF /* Sesame.plist */,
 				BE918C511A22A5F5006043CF /* WordListViewController.swift */,
 				BE820C5F1D14717400CD6ABA /* AddWordViewController.swift */,
 				BE0CD1131D178D3700BB6E4A /* UIViewController+Dictionary.swift */,
@@ -159,6 +177,7 @@
 				BE918C461A22A5F5006043CF /* Sources */,
 				BE918C471A22A5F5006043CF /* Frameworks */,
 				BE918C481A22A5F5006043CF /* Resources */,
+				8429C9D421766E6900C1DCFF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -258,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8429C9D321766E5500C1DCFF /* Sesame.plist in Resources */,
 				BE918C551A22A5F5006043CF /* Main.storyboard in Resources */,
 				BE918C571A22A5F5006043CF /* Images.xcassets in Resources */,
 			);
@@ -280,6 +300,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8429C9D421766E6900C1DCFF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Sesame.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Sesame.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 		BE776E551D087C7700D4A315 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,7 +330,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "#!/bin/bash\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\"); echo $buildNumber\nbuildNumber=$(($buildNumber + 1)); echo $buildNumber\nbuildNumber=$(printf \"%d\" $buildNumber); echo $buildNumber\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"";
+			shellScript = "#!/bin/bash\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\"); echo $buildNumber\nbuildNumber=$(($buildNumber + 1)); echo $buildNumber\nbuildNumber=$(printf \"%d\" $buildNumber); echo $buildNumber\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -306,6 +345,7 @@
 				BE820C601D14717400CD6ABA /* AddWordViewController.swift in Sources */,
 				BE776E571D09D60700D4A315 /* Preferences.swift in Sources */,
 				BE0CD1141D178D3700BB6E4A /* UIViewController+Dictionary.swift in Sources */,
+				8429C9D121766DEC00C1DCFF /* Sesame+Utilities.swift in Sources */,
 				BE918C501A22A5F5006043CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +502,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8B38X92RJ6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Kotoba/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.willhains.$(PRODUCT_NAME:rfc1034identifier)";
@@ -480,6 +524,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8B38X92RJ6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Kotoba/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.willhains.$(PRODUCT_NAME:rfc1034identifier)";

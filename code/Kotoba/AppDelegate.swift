@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Sesame
 
 // Theme colour for app icon and tint
 let redThemeColour = UIColor(hue: 5.0, saturation: 0.73, brightness: 0.65, alpha: 1.0)
@@ -30,6 +31,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate
 		
 		// Set tint colour to match icon
 		UIView.appearance().tintColor = redThemeColour
+
+        Sesame.shared = .init(
+            appId: SesameProperties.file.appId,
+            auth: SesameProperties.file.auth,
+            versionId: SesameProperties.file.versionId,
+            userId: SesameProperties.file.userId
+        )
+        
 		return true
 	}
 }
